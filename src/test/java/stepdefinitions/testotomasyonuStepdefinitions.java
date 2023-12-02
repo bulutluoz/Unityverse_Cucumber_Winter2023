@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -31,7 +32,6 @@ public class testotomasyonuStepdefinitions {
     }
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
-        ReusableMethods.bekle(2);
         Driver.quitDriver();
     }
 
@@ -67,5 +67,45 @@ public class testotomasyonuStepdefinitions {
         String actualUrunIsmi = testOtomasyonuPage.seciliUrunIsimElementi.getText().toLowerCase();
         Assert.assertTrue(actualUrunIsmi.contains(urunIsimIcerigi));
 
+    }
+
+    @Then("{int} saniye bekler")
+    public void saniyeBekler(int saniye) {
+
+        try {
+            Thread.sleep(saniye*1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Then("account butonuna basar")
+    public void account_butonuna_basar() {
+        testOtomasyonuPage.accountLinki.click();
+    }
+    @Then("email olarak {string} girer")
+    public void email_olarak_girer(String email) { // toGecerliEmail
+
+        testOtomasyonuPage.signInEmailKutusu.sendKeys(ConfigReader.getProperty(email));
+    }
+    @Then("password olarak {string} girer")
+    public void password_olarak_girer(String password) {
+
+        testOtomasyonuPage.signInPasswordKutusu.sendKeys(ConfigReader.getProperty(password));
+
+    }
+    @Then("signIn butonuna basar")
+    public void sign_in_butonuna_basar() {
+        testOtomasyonuPage.signInFormuSubmitButonu.click();
+    }
+    @Then("basarili giris yapilabildigini test eder")
+    public void basarili_giris_yapilabildigini_test_eder() {
+        Assert.assertTrue(testOtomasyonuPage.logoutButonu.isDisplayed());
+    }
+
+    @And("sisteme giris yapamadigini test eder")
+    public void sistemeGirisYapamadiginiTestEder() {
+
+        Assert.assertTrue(testOtomasyonuPage.signInEmailKutusu.isDisplayed());
     }
 }

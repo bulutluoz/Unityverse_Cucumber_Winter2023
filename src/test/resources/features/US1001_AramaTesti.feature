@@ -9,7 +9,7 @@
       Then arama sonucunda urun bulunabildigini test eder
       And sayfayi kapatir
 
-
+    @smoke
     Scenario: TC02 Kullanici test otomasyonu sayfasinda shoes aratabilmeli
       Given kullanici testotomasyonu anasayfaya gider
       When arama kutusuna shoes yazip aratir
