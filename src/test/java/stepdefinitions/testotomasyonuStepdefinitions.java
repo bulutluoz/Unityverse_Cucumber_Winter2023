@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -30,7 +31,29 @@ public class testotomasyonuStepdefinitions {
     }
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
-        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(2);
         Driver.quitDriver();
+    }
+
+    @When("arama kutusuna shoes yazip aratir")
+    public void aramaKutusunaShoesYazipAratir() {
+        testOtomasyonuPage.aramaKutusu.sendKeys("shoes" + Keys.ENTER);
+    }
+
+    @When("arama kutusuna dress yazip aratir")
+    public void aramaKutusunaDressYazipAratir() {
+        testOtomasyonuPage.aramaKutusu.sendKeys("dress" + Keys.ENTER);
+    }
+
+    @Then("ilk urune click yapar")
+    public void ilk_urune_click_yapar() {
+        testOtomasyonuPage.bulunanUrunlerListesi.get(0).click();
+    }
+    @Then("urun isminin shoes icerdigini test eder")
+    public void urun_isminin_shoes_icerdigini_test_eder() {
+
+        String expectedUrunIsimIcerigi = "shoes";
+        String actualUrunIsmi = testOtomasyonuPage.seciliUrunIsimElementi.getText().toLowerCase();
+        Assert.assertTrue(actualUrunIsmi.contains(expectedUrunIsimIcerigi));
     }
 }
