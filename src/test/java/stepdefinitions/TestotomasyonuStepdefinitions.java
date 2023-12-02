@@ -12,7 +12,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class testotomasyonuStepdefinitions {
+public class TestotomasyonuStepdefinitions {
 
     TestOtomasyonuPage testOtomasyonuPage = new TestOtomasyonuPage();
 

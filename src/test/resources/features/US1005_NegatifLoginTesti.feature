@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1005 Kullanici yanlis bilgilerle sisteme giris yapamaz
 
 

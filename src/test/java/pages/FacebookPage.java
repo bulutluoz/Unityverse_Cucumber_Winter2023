@@ -27,4 +27,12 @@ public class FacebookPage {
 
     @FindBy(xpath = "//div[@class='_9ay7']")
     public WebElement girisYapilamadiElementi;
+
+    @FindBy(xpath = "//*[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")
+    public WebElement kayitOlusturButonu;
+
+    @FindBy(name = "websubmit")
+    public WebElement kaydolButonu;
+
+
 }
