@@ -56,4 +56,16 @@ public class testotomasyonuStepdefinitions {
         String actualUrunIsmi = testOtomasyonuPage.seciliUrunIsimElementi.getText().toLowerCase();
         Assert.assertTrue(actualUrunIsmi.contains(expectedUrunIsimIcerigi));
     }
+
+    @When("arama kutusuna {string} yazip aratir")
+    public void arama_kutusuna_yazip_aratir(String aratilacakKelime) {
+        testOtomasyonuPage.aramaKutusu.sendKeys(aratilacakKelime + Keys.ENTER);
+    }
+    @Then("urun isminin {string} icerdigini test eder")
+    public void urun_isminin_icerdigini_test_eder(String urunIsimIcerigi) {
+
+        String actualUrunIsmi = testOtomasyonuPage.seciliUrunIsimElementi.getText().toLowerCase();
+        Assert.assertTrue(actualUrunIsmi.contains(urunIsimIcerigi));
+
+    }
 }
