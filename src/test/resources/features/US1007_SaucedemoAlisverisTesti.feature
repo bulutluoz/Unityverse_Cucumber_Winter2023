@@ -1,6 +1,6 @@
 
   Feature: US1007 Kullanici SauceDemo sayfasinda urun satin alir
-
+    @P1
     Scenario: TC14 Saucedemo sayfasinda sectigimiz urun sepete eklenmeli
 
       Given kullanici "sauceUrl" anasayfasina gider

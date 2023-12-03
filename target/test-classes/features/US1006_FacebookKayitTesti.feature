@@ -1,5 +1,5 @@
 Feature: US1006 Feyk bilgilerle facebook'a kayit yaptirma
-
+  @smoke
   Scenario: TC13 Kullanici Faker class'indan bilgilerle facebook'da kayit olusturur
 
     Given kullanici "facebookUrl" anasayfasina gider
