@@ -1,7 +1,8 @@
-  @wip
+
   Feature:US1011 Kullanici kayit olusturabilmeli
 
-  Scenario Outline:
+  Scenario Outline: TC17 farkli kayitlar olusturulabilmeli
+
     When kullanici "editorUrl" anasayfasina gider
     Then new butonuna basar
     And 1 saniye bekler
