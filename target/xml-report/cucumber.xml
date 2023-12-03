@@ -1,55 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.529" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1004 Kullanici dogru bilgilerle sisteme giris yapar" name="TC09 Kullanici gecerli kullanici adi ve password ile giris yapabilmeli" time="20.429">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Logout']&quot;}
-  (Session info: chrome=119.0.6045.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eeb20e954c4c1b09c8735b45d726cc74, findElement {using=xpath, value=//span[text()='Logout']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eeb20e954c4c1b09c8735b45d726cc74">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Logout']"}
-  (Session info: chrome=119.0.6045.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '11.0.15.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eeb20e954c4c1b09c8735b45d726cc74, findElement {using=xpath, value=//span[text()='Logout']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eeb20e954c4c1b09c8735b45d726cc74
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
-	at stepdefinitions.TestotomasyonuStepdefinitions.basarili_giris_yapilabildigini_test_eder(TestotomasyonuStepdefinitions.java:103)
-	at ✽.basarili giris yapilabildigini test eder(file:///Users/ahmetbulutluoz/Desktop/My%20Desktop/course/projeler/com.unityverse_Cucumber/src/test/resources/features/US1004_PozitifLoginTesti.feature:11)
-]]>
-</failure>
+<testsuite name="Cucumber" time="60.312" tests="9" skipped="0" failures="0" errors="0">
+<testcase classname="US1001 Testotomasyonu Arama Testi" name="TC02 Kullanici test otomasyonu sayfasinda shoes aratabilmeli" time="3.762">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+When arama kutusuna shoes yazip aratir......................................passed
+Then arama sonucunda urun bulunabildigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Testotomasyonu Arama Testi" name="TC04 Kullanici testotomasyonu sayfasinda arama yapabilmeli" time="7.778">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+When arama kutusuna phone yazip aratir......................................passed
+Then arama sonucunda urun bulunabildigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002 Testotomasyonu Arama Testi" name="TC06 Kullanici test otomasyonu sayfasinda dress aratabilmeli" time="3.284">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+When arama kutusuna dress yazip aratir......................................passed
+Then arama sonucunda urun bulunabildigini test eder.........................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1006 Feyk bilgilerle facebook'a kayit yaptirma" name="TC13 Kullanici Faker class'indan bilgilerle facebook'da kayit olusturur" time="9.366">
+<system-out><![CDATA[
+Given kullanici "facebookUrl" anasayfasina gider............................passed
+Then facebook cookies kabul eder............................................passed
+And facebook'da yeni hesap olustur butonuna basar...........................passed
+When Faker class'indan bilgilerle facebook kayit formunu doldurur...........passed
+Then 3 saniye bekler........................................................passed
+And facebook kayit ol tusuna basar..........................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 verilen farkli gecersiz kullanici bilgileri ile giris yapilamaz" name="TC16 Kullanici gecersiz kullanici adi ve gecerli password ile giris yapamamali - Example #1.1" time="7.137">
 <system-out><![CDATA[
 Given kullanici testotomasyonu anasayfaya gider.............................passed
 Then account butonuna basar.................................................passed
-And email olarak "toGecerliEmail" girer.....................................passed
-And password olarak "toGecersizPassword" girer..............................passed
+And email olarak "toGecersizEmail2" girer...................................passed
+And password olarak "toGecersizPassword2" girer.............................passed
 Then signIn butonuna basar..................................................passed
-And basarili giris yapilabildigini test eder................................failed
-And 3 saniye bekler.........................................................skipped
-And sayfayi kapatir.........................................................skipped
+And sisteme giris yapamadigini test eder....................................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 verilen farkli gecersiz kullanici bilgileri ile giris yapilamaz" name="TC16 Kullanici gecersiz kullanici adi ve gecerli password ile giris yapamamali - Example #1.2" time="8.037">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+Then account butonuna basar.................................................passed
+And email olarak "toGecersizEmail3" girer...................................passed
+And password olarak "toGecersizPassword3" girer.............................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 verilen farkli gecersiz kullanici bilgileri ile giris yapilamaz" name="TC16 Kullanici gecersiz kullanici adi ve gecerli password ile giris yapamamali - Example #1.3" time="7.904">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+Then account butonuna basar.................................................passed
+And email olarak "toGecersizEmail4" girer...................................passed
+And password olarak "toGecersizPassword4" girer.............................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1010 verilen farkli gecersiz kullanici bilgileri ile giris yapilamaz" name="TC16 Kullanici gecersiz kullanici adi ve gecerli password ile giris yapamamali - Example #1.4" time="6.941">
+<system-out><![CDATA[
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+Then account butonuna basar.................................................passed
+And email olarak "toGecersizEmail5" girer...................................passed
+And password olarak "toGecersizPassword5" girer.............................passed
+Then signIn butonuna basar..................................................passed
+And sisteme giris yapamadigini test eder....................................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Kullanici giris testi" name="TC18 Yanlis bilgilerle giris yapilamamali" time="5.987">
+<system-out><![CDATA[
+Given kullanici "webUniUrl" anasayfasina gider..............................passed
+Then login portal'a kadar asagi iner........................................passed
+And login portal'a tiklar...................................................passed
+And 1 saniye bekler.........................................................passed
+And diger window'a gecer....................................................passed
+When username ve password kutularina fake deger yazdirir....................passed
+Then login butonuna basar...................................................passed
+And Popup'ta cikan yazinin "validation failed" oldugunu test eder...........passed
+Then Ok diyerek Popup'i kapatir.............................................passed
+And Ilk sayfaya geri doner..................................................passed
+Then Ilk sayfaya donuldugunu test eder......................................passed
+And sayfayi kapatir.........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

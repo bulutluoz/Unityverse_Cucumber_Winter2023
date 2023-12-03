@@ -9,7 +9,7 @@ Feature: US1003 Kullanici aradigi urunu bulabilmeli
     And urun isminin shoes icerdigini test eder
     And sayfayi kapatir
 
-
+  @P1
   Scenario:  TC08 men dress arama testi
     Given kullanici testotomasyonu anasayfaya gider
     When arama kutusuna "baby" yazip aratir

@@ -1,7 +1,7 @@
 
   Feature: US1001 Testotomasyonu Arama Testi
 
-
+    @P2
     Scenario: TC01 Kullanici testotomasyonu sayfasinda arama yapabilmeli
 
       Given kullanici testotomasyonu anasayfaya gider
