@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="28.501" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1013 Automation Exercise kullanici olusturma testi" name="TC19 Kullanici bilgileri girerek kayit olabilmeli" time="28.405">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;h2[class='title text-center']&quot;}
-  (Session info: chrome=119.0.6045.199)
+<testsuite name="Cucumber" time="21.418" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="US1004 Kullanici dogru bilgilerle sisteme giris yapar" name="TC09 Kullanici gecerli kullanici adi ve password ile giris yapabilmeli" time="21.335">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()='Logout']&quot;}
+  (Session info: chrome=120.0.6099.71)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5fe3f27304cb4ec4d483f0e7b804a0b1, findElement {using=xpath, value=h2[class='title text-center']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5fe3f27304cb4ec4d483f0e7b804a0b1">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"h2[class='title text-center']"}
-  (Session info: chrome=119.0.6045.199)
+Command: [762e918e16f2a43798255efb3b611917, findElement {using=xpath, value=//span[text()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59425/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 762e918e16f2a43798255efb3b611917">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Logout']"}
+  (Session info: chrome=120.0.6099.71)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.1.2', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5fe3f27304cb4ec4d483f0e7b804a0b1, findElement {using=xpath, value=h2[class='title text-center']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:58025/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5fe3f27304cb4ec4d483f0e7b804a0b1
+Command: [762e918e16f2a43798255efb3b611917, findElement {using=xpath, value=//span[text()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: /var/folders/k5/tn4cs92s1h3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59425}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59425/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 762e918e16f2a43798255efb3b611917
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -37,19 +37,18 @@ Session ID: 5fe3f27304cb4ec4d483f0e7b804a0b1
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
-	at stepdefinitions.AutomationExerciseStepdefinitions.hesap_olustugunu_test_eder(AutomationExerciseStepdefinitions.java:74)
-	at ✽.hesap olustugunu test eder(file:///Users/ahmetbulutluoz/Desktop/My%20Desktop/course/projeler/com.unityverse_Cucumber/src/test/resources/features/US1013_AutomationExerciseTesti.feature:15)
+	at stepdefinitions.TestotomasyonuStepdefinitions.basarili_giris_yapilabildigini_test_eder(TestotomasyonuStepdefinitions.java:103)
+	at ✽.basarili giris yapilabildigini test eder(file:///Users/ahmetbulutluoz/Desktop/My%20Desktop/course/projeler/com.unityverse_Cucumber/src/test/resources/features/US1004_PozitifLoginTesti.feature:11)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanici "exerciseUrl" anasayfasina gider............................passed
-And user sign up linkine tiklar.............................................passed
-Then 1 saniye bekler........................................................passed
-And user Create an account bölümüne email adresi girer......................passed
-And signUp butonuna basar...................................................passed
-And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
-And user Create Account butonuna basar......................................passed
-Then hesap olustugunu test eder.............................................failed
+Given kullanici testotomasyonu anasayfaya gider.............................passed
+Then account butonuna basar.................................................passed
+And email olarak "toGecerliEmail" girer.....................................passed
+And password olarak "toGecersizPassword" girer..............................passed
+Then signIn butonuna basar..................................................passed
+And basarili giris yapilabildigini test eder................................failed
+And 3 saniye bekler.........................................................skipped
 And sayfayi kapatir.........................................................skipped
 ]]></system-out>
 </testcase>

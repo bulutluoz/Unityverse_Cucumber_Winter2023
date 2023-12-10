@@ -1,6 +1,6 @@
 
   Feature: US1004 Kullanici dogru bilgilerle sisteme giris yapar
-    @P1
+    @rapor1
     Scenario: TC09 Kullanici gecerli kullanici adi ve password ile giris yapabilmeli
 
       Given kullanici testotomasyonu anasayfaya gider

@@ -1,7 +1,7 @@
 Feature: Kullanici giris testi
 
 
-  @wip @smoke
+  @wip @rapor
   Scenario:TC18 Yanlis bilgilerle giris yapilamamali
 
     Given kullanici "webUniUrl" anasayfasina gider
